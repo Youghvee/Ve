@@ -25,35 +25,35 @@ assistantids = []
 class Userbot(Client):
     def __init__(self):
         self.one = Client(
-            name="AlexaOne",
+            name="BeeOne",
             api_id=config.API_ID,
             api_hash=config.API_HASH,
             session_string=str(config.STRING1),
             no_updates=True,
         )
         self.two = Client(
-            name="AlexaTwo",
+            name="BeeTwo",
             api_id=config.API_ID,
             api_hash=config.API_HASH,
             session_string=str(config.STRING2),
             no_updates=True,
         )
         self.three = Client(
-            name="AlexaThree",
+            name="BeeThree",
             api_id=config.API_ID,
             api_hash=config.API_HASH,
             session_string=str(config.STRING3),
             no_updates=True,
         )
         self.four = Client(
-            name="AlexaFour",
+            name="BeeFour",
             api_id=config.API_ID,
             api_hash=config.API_HASH,
             session_string=str(config.STRING4),
             no_updates=True,
         )
         self.five = Client(
-            name="AlexaFive",
+            name="BeeFive",
             api_id=config.API_ID,
             api_hash=config.API_HASH,
             session_string=str(config.STRING5),
@@ -65,9 +65,7 @@ class Userbot(Client):
         if config.STRING1:
             await self.one.start()
             try:
-                await self.one.join_chat("Alexa_Help")
-                await self.one.join_chat("TheTeamAlexa")
-                await self.one.join_chat("Alexa_BotUpdates")
+                await self.one.join_chat("SpotifyStream_Id")
             except:
                 pass
             assistants.append(1)
@@ -177,9 +175,7 @@ class Userbot(Client):
         if config.STRING5:
             await self.five.start()
             try:
-                await self.five.join_chat("Alexa_Help")
-                await self.five.join_chat("TheTeamAlexa")
-                await self.five.join_chat("Alexa_BotUpdates")
+                await self.five.join_chat("SpotifyStream_Id")
             except:
                 pass
             assistants.append(5)
