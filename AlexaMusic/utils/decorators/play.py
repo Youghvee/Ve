@@ -11,15 +11,15 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
 from config import PLAYLIST_IMG_URL, PRIVATE_BOT_MODE, MUST_JOIN, adminlist
 from strings import get_string
-from Musikku import YouTube, app
-from Musikku.misc import SUDOERS
-from Musikku.utils.database import (get_cmode, get_lang,
+from AlexaMusic import YouTube, app
+from AlexaMusic.misc import SUDOERS
+from AlexaMusic.utils.database import (get_cmode, get_lang,
                                        get_playmode, get_playtype,
                                        is_active_chat,
                                        is_commanddelete_on,
                                        is_served_private_chat)
-from Musikku.utils.database.memorydatabase import is_maintenance
-from Musikku.utils.inline.playlist import botplaylist_markup
+from AlexaMusic.utils.database.memorydatabase import is_maintenance
+from AlexaMusic.utils.inline.playlist import botplaylist_markup
 from pyrogram.errors.exceptions.bad_request_400 import UserNotParticipant
 
 
@@ -95,7 +95,7 @@ def PlayWrapper(command):
                 sub = await app.export_chat_invite_link(MUST_JOIN)
                 kontol = InlineKeyboardMarkup(
                     [
-                        [InlineKeyboardButton("📝 JOIN DULU 📝", url=sub)]
+                        [InlineKeyboardButton("📝 JOIN DULU", url=sub)]
                     ]
                 )
                 return await message.reply_text(_["force_sub"].format(message.from_user.mention), reply_markup=kontol)
