@@ -109,7 +109,7 @@ def stream_markup(_, videoid, chat_id):
                 text=_["PL_B_2"],
                 callback_data=f"add_playlist {videoid}",
             ),
-            InlineKeyboardButton(text="Info", url=f"https://t.me/Jankari_Ki_Duniya"),
+            InlineKeyboardButton(text="Info", url=f"https://t.me/SpotifyStreamMusic/64"),
         ],
         [
             InlineKeyboardButton(
