@@ -57,7 +57,7 @@ async def play_commnd(
 ):
     if not await is_served_user(message.from_user.id):
         await message.reply_text(
-            text="😢 ᴅᴇᴀʀ ʏᴏᴜ ᴀʀᴇ ɴᴏᴛ ᴀ ᴠᴇʀɪғɪᴇᴅ ᴀᴛ ᴀʟᴇxᴀ ᴅᴀᴛᴀʙᴀsᴇ.\n☔ ᴘʟᴇᴀsᴇ ᴜsᴇ /verify ᴛᴏ ᴠᴇʀɪғʏ ʏᴏᴜʀsᴇʟғ ᴀᴛ ᴀʟᴇxᴀ ᴅᴀᴛᴀʙᴀsᴇ.",
+            text="Hallo kamu belum melakukan verifikasi di database.\ntolong kirimkan /verify disini untuk melakukan verifikasi database kamu agar bisa melakukan play music dimanapun, jika sudah verifikasi silahkan play ulang terimakasih.",
         )
         return
     mystic = await message.reply_text(
